@@ -90,7 +90,7 @@ unity_2 = []
 results = []
 absences = []
 
-for i in range(6):
+for i in range(len(rows)):
     codes.append(''.join(rows[i][0].text.split()))
     unity_1.append(''.join(rows[i][2].text.split()))
     unity_2.append(''.join(rows[i][3].text.split()))

@@ -26,5 +26,3 @@ def upload_csv():
 
 if __name__ == '__main__':
     upload_csv()
-
-
