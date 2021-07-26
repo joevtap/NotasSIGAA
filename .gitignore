@@ -4,5 +4,5 @@ credentials.json
 .env
 grades.csv
 venv
-__pycache__/*.*
-.idea/*.*
+__pycache__
+.idea
