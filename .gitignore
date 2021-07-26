@@ -1,0 +1,8 @@
+chromedriver
+passoapasso
+credentials.json
+.env
+grades.csv
+venv
+__pycache__/*.*
+.idea/*.*
