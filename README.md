@@ -112,7 +112,7 @@ Rode `python main.py` (ou variantes) e veja a mágica acontecer
 
 ## Como colaborar
 
-Você pode colaborar no desenvolvimento desse projeto por meio de:
+Você pode colaborar no desenvolvimento deste projeto por meio de:
 
 - Notificação de issues
 - Correção de bugs (faça um Pull Request)
