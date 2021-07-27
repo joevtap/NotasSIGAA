@@ -27,7 +27,7 @@ if downloads_path:
 
     chrome_options.add_experimental_option("prefs", prefs)
 
-chrome_options.headless = False
+chrome_options.headless = True
 chrome_options.add_argument('--no-sandbox')
 
 driver = webdriver.Chrome(options=chrome_options, executable_path=driver_path)
