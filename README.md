@@ -16,7 +16,7 @@
 
 ## Disclaimer
 
-Este projeto foi desenvolvido com finalidade única e exclusivamente acadêmica. Caso não esteja de acordo com exposição e/ou utilização deste trabalho, mande um e-mail para joelvitortorres@mail.com e este repositório será ocultado imediatamente
+Este projeto foi desenvolvido com finalidade única e exclusivamente acadêmica. Caso não esteja de acordo com exposição e/ou utilização deste trabalho, mande um e-mail para joelvitortorres@gmail.com e este repositório será ocultado imediatamente
 
 ## Sobre
 
