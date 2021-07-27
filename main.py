@@ -65,6 +65,8 @@ grades_page.click()
 
 grades_table = driver.find_element_by_xpath(grades_table_xpath).get_attribute('outerHTML')
 
+driver.close()
+
 # ========== EXTRACT DATA ========== #
 # Columns
 soup = Bs(grades_table, 'html.parser')
@@ -114,6 +116,5 @@ df.to_csv(csv_output, index=False, encoding='utf-8')
 # Upload CSV to G Drive
 upload_csv()
 
-# Print results and stop the driver
+# Print results
 print(df)
-driver.close()
