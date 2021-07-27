@@ -1,4 +1,3 @@
-from selenium.webdriver.chrome.options import Options
 from selenium.webdriver import ActionChains
 from bs4 import BeautifulSoup as Bs
 from dotenv import load_dotenv
@@ -17,11 +16,21 @@ my_username = os.getenv('MY_USERNAME')
 my_password = os.getenv('MY_PASSWORD')
 driver_path = os.getenv('DRIVER_PATH')
 csv_output = os.getenv('CSV_OUTPUT')
+downloads_path = os.getenv('DOWNLOADS_PATH')
 
-options = Options()
-options.headless = True
-options.add_argument('--no-sandbox')
-driver = webdriver.Chrome(options=options, executable_path=driver_path)
+chrome_options = webdriver.ChromeOptions()
+
+if downloads_path:
+    prefs = {
+        "download.default_directory": os.path.abspath(downloads_path)
+    }
+
+    chrome_options.add_experimental_option("prefs", prefs)
+
+chrome_options.headless = False
+chrome_options.add_argument('--no-sandbox')
+
+driver = webdriver.Chrome(options=chrome_options, executable_path=driver_path)
 
 driver.get(URL)
 

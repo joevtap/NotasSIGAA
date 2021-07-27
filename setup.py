@@ -8,6 +8,7 @@ def setup():
     g_credentials_path = str(input(
         'Google Cloud credentials.json path (always use / and, if in the same dir, use ./): '))
     g_sheet = str(input("Google Sheet's sheet name: "))
+    downloads_path = str(input('Downloads folder path (always use / and, if in the same dir, use ./): '))
 
     with open('./.env', 'w') as file:
         file.write(f"""MY_USERNAME="{username}"
@@ -16,6 +17,7 @@ DRIVER_PATH="{webdriver_path}"
 CSV_OUTPUT="{csv_output}"
 G_CREDENTIALS="{g_credentials_path}"
 G_SHEET="{g_sheet}"
+DOWNLOADS_PATH="{downloads_path}"
 """)
 
 
